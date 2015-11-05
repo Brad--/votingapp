@@ -9,7 +9,7 @@ module.exports = function (app, passport) {
 		if (req.isAuthenticated()) {
 			return next();
 		} else {
-			res.redirect('/login');
+			res.redirect('/landing');
 		}
 	}
 
@@ -19,9 +19,19 @@ module.exports = function (app, passport) {
 		.get(isLoggedIn, function (req, res) {
 			res.sendFile(path + '/public/index.html');
 		});
+		
+	app.route('/landing')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/landing.html');
+		})
+		
+	app.route('/signup')
+		.get(function(req, res) {
+			res.sendFile(path + '/public/signup.html');
+		})
 
 	app.route('/login')
-		.get(function (req, res) {
+		.get(isLoggedIn, function (req, res) {
 			res.sendFile(path + '/public/login.html');
 		});
 

@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default {
+    background-color: #830421; /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#830377, #a52643);
+    background: -moz-linear-gradient(#830377, #a52643);
+    background: -o-linear-gradient(#830377, #a52643);
+    background: linear-gradient(#830377, #a52599);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eee;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #eee;
+    text-shadow: 1px 1px 1px #222;
+}
+
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #830377;
+    font-size: 5em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.alt-color {
+    color: #222;
+}
+
+.buttons {
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    font-size: 2em;
+    color: #222;
+    margin: 40px;
+    padding: 10px 25px 10px 25px;
+    background-color: #830377;
+    background: -webkit-linear-gradient(#a52599, #c747bb);
+    background: -moz-linear-gradient(#a52599, #c747bb);
+    background: -o-linear-gradient(#a52599, #c747bb);
+    background: linear-gradient(#a52599, #c747bb);
+}
+
+.btn:hover,
+.btn:focus {
+    color: #222;
+    background: -webkit-linear-gradient(#830377, #a5259);
+    background: -moz-linear-gradient(#830377, #a52599);
+    background: -o-linear-gradient(#830377, #a52599);
+    background: linear-gradient(#830377, #a52599);
+}
+
+h2 {
+    color: #830377;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+p {
+    margin-right: 10px;
+    margin-left:  10px;
+}
+
+.jumbotron {
+    background-color: rgba(165, 37, 153, .2);
+}
+
+.col-md-4 > .glyphicon {
+    color: #830377;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 3px 3px 30px #222;
+}
